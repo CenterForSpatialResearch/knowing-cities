@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SCHEDULE — Ways Of Knowing Cities</title>
+     <meta name="description" content="Technology increasingly mediates the way that knowledge, power, and culture interact to create and transform the cities we live in. This one-day conference brings together leading scholars and practitioners from across multiple disciplines to consider the role that technologies have played in changing how urban spaces and social life are structured and understood – both historically and in the present moment.">
+  <meta name="keywords" content="Columbia, Columbia University, Conference, February, 2018, GSAPP, Columbia University Graduate School of Architecture, Planning and Preservation, Design, Mapping, Cartography, Research, Spatial Research, Critical Cartography, Architecture, Urbanism, Data, Data Science, Data Visualization, Advocacy">
+    <link rel="stylesheet" href="style.css" />
+      <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="libraries/js-yaml.min.js"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $.get('content/schedule.yml', function(data) {
+        var content = jsyaml.load(data);
+        var BIORETURNPARAM = "?r=sch";
+        var $speaker = $("<div>", {id: "speaker"});
+        var $schedule = $("<div>", {id: "schedule"});
+        $("#scroll").append($speaker);
+        $("#scroll").append($schedule);
+        // create data obj to allow looking up session time given a biokey
+        var time_hash = function(t) {
+          return t.replace(/\D/g,''); // strip non-numerics, i.e. "9:30" > "930"
+        }
+        var time_lookup = {};
+        $.each(content.schedule, function() {
+          var session_time = this.time;
+          $.each(this.activities, function() {
+            if (this.biokey) {
+              time_lookup[this.biokey] = time_hash(session_time);
+            }
+          });
+        });
+
+        // define a urlparam parser on jQuery object for handling back button
+        $.urlParam = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (results==null){
+               return null;
+            }
+            else{
+               return decodeURI(results[1]) || 0;
+            }
+        }
+
+        // define what to do on URL change event
+        var hashHandler = function () {
+          // strip leading # and any trailing ?r="" params
+          var hash = (window.location.hash) ? window.location.hash.substring(1).split('?')[0] : null;
+
+          // if hash is a valid biokey, make/show bio
+          if (hash in content.bios) {
+            $schedule.hide();
+            loadBioContent(content.bios[hash], hash);
+            $speaker.show();
+
+          } else { // make/show schedule
+            $speaker.hide();
+            if ($schedule.children().length == 0) {
+              loadScheduleContent(content.schedule);
+            }
+            $schedule.show();
+            if (hash) { // if not null
+              // https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+              $("#"+hash)[0].scrollIntoView({block: "center", inline: "nearest"});
+            }
+          }
+        };
+
+        var loadBioContent = function (s, biokey) {
+          // make back button and clear any previous content
+          var backurl = function() {
+            if ($.urlParam('r') == 'hp') return "index.html";
+            // else: look up which time block speaker is in and construct backurl
+            // to return to correct schedule block
+            return "#" + time_lookup[biokey];
+          }
+          $speaker.html($("<div>", {id: "back-button", html: '<a href="'+backurl()+'">&nbsp;</a>'}));
+
+          $speaker.append($("<div>", {id: "name", html: s.name}));
+          $speaker.append($("<div>", {id: "talk-title", html: s.talk_title}));
+          if (s.video_id) {
+            $speaker.append($("<div id='video_container'><iframe allowfullscreen='' frameborder='0' src='https://www.youtube.com/embed/"+s.video_id+"?start="+s.video_starttime+"'></iframe></div>"));
+          }
+          if (s.abstract) {
+            $speaker.append($("<div>", {id: "abstract", html: "Abstract<br>" + s.abstract}));
+          }
+          $speaker.append($("<div>", {id: "bio", html: "Bio<br>" + s.bio}));
+          $('html, body').animate({scrollTop : 0},0);
+        };
+
+        var loadScheduleContent = function (s) {
+          // make X button and clear any previous content
+          $schedule.html($("<div>", {id: "close-button", html: '<a href="index.html">&nbsp;</a>'}));
+
+          $schedule.append($("<div>", {id: "header", html: "Schedule"}));
+
+          var $table = $("<table>");
+
+          // for each row in schedule data
+          $.each(s, function() {
+            $row = $("<tr>");
+
+            // append time cell
+            $row.append($("<td>", {id: time_hash(this.time), class: "time", html: this.time}));
+
+            // make activities cell
+            var a = "";
+            $.each(this.activities, function() {
+              if (this.biokey) {
+                var spkr = content.bios[this.biokey];
+                a += '<a href="#'+this.biokey+BIORETURNPARAM+'">'+spkr.name+" — "+spkr.talk_title+'</a>';
+              } else if (this.text) {
+                a += this.text;
+              }
+              a += "<br><br>";
+            });
+            $row.append($("<td>", {class: "activities", html: a}));
+
+            // append assembled row to table
+            $table.append($row);
+          });
+
+          $schedule.append($table);
+        }
+
+        // actually check URL now
+        hashHandler();
+        window.addEventListener("hashchange", hashHandler, false);
+
+      }); // end $.get(yml)
+    </script>
+  </head>
+
+  <body>
+    <div id="graphic">
+      <div id="inset">
+        <div id="scroll">
+
+        </div>
+      </div>
+    </div>
+    <div id="gmap"></div>
+    <div id="modal">
+      <div id="wrap">
+           <div class="btn"><a href="javascript:hideInfo()">&#215;</a></div>
+        <div id="info"></div>
+
+      </div>
+    </div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb923j7HHrPG2HCnIfCm6dxGzLZirWgTc&callback=initMap">
+    </script>
+  </body>
+</html>

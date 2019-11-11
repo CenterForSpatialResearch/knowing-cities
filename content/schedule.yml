@@ -1,0 +1,167 @@
+title: Schedule
+schedule:
+  - time: "9:30"
+    activities:
+    - text: "Opening"
+    - text:  "Amale Andraos"
+    - text:  "Laura Kurgan"
+  - time: "9:50"
+    activities:
+    - biokey: smattern
+    - biokey: ohalpern
+    - biokey: achan
+    - text: "Moderated by Felicity Scott"
+  - time: "11:10"
+    activities:
+    - text:  "Break"
+  - time: "11:30"
+    activities:
+    - biokey: doffenhuber
+    - biokey: vmcewen
+    - text: "Moderated by Juan Francisco Saldarriaga"
+  - time: "12:30"
+    activities:
+    - biokey: wchun
+  - time: "1:30"
+    activities:
+    - text: "Lunch"
+  - time: "2:00"
+    activities:
+    - biokey: rpietrusko
+    - biokey: nmutiti
+    - biokey: sbrowne
+    - text: "Moderated by Anupama Rao"
+  - time: "3:20"
+    activities:
+    - biokey: mwilson
+    - biokey: lmeisterlin
+    - text: "Moderated by Dare Brawley"
+  - time: "4:20"
+    activities:
+    - text:  "Break"
+  - time: "4:40"
+    activities:
+    - biokey: cheller
+    - biokey: scobarrubias
+    - text: "Moderated by Manan Ahmed"
+  - time: "5:40"
+    activities:
+    - biokey: tpaglen
+  - time: "6:30"
+    activities:
+    - text:  "Reception"
+bios:
+  # keynote speakers
+  wchun:
+    name: Wendy Hui Kyong Chun
+    title: Professor of Modern Culture and Media, Brown University
+    talk_title: "Ways of Knowing <s>Cities</s> Networks"
+    abstract: "<q>Ways of Knowing Cities,</q> from neighborhood mapping to commonsense notions of community, have fundamentally shaped electronic networks.  Focusing on the inter-relationship between segregation and pattern recognition, this talk explores processes of <q>discriminating data</q> and their impact on users and urban dwellers."
+    bio: "Wendy Hui Kyong Chun is Professor of Modern Culture and Media at Brown University. She has studied both Systems Design Engineering and English Literature, which she combines and mutates in her current work on digital media. She is author of Control and Freedom: Power and Paranoia in the Age of Fiber Optics (MIT, 2006), Programmed Visions: Software and Memory (MIT 2011), and Updating to Remain the Same: Habitual New Media (MIT 2016). She is co-editor (with Tara McPherson and Patrick Jagoda) of a special issue of American Literature entitled New Media and American Literature, co-editor (with Lynne Joyrich) of a special issue of Camera Obscura entitled Race and/as Technology and co-editor (with Anna Fisher and Thomas Keenan) of New Media, Old Media: A History and Theory Reader, 2nd edition (forthcoming Routledge, 2015). She was a 2016 Guggenheim Fellow, ACLS and American Academy of Berlin Fellow, and she has been a Member of the Institute for Advanced Study (Princeton), a Fellow at the Radcliffe Institute for Advanced Study at Harvard and a Wriston Fellow at Brown. She has been the Velux Visiting Professor of Management, Politics and Philosophy at the Copenhagen Business School; the Wayne Morse Chair for Law and Politics at the University of Oregon, Visiting Professor at Leuphana University (Luneburg, Germany), Visiting Associate Professor in the History of Science Department at Harvard."
+    video_id: xnwgAvFmN2Q
+    video_starttime: 202
+  tpaglen:
+    name: Trevor Paglen
+    title: Artist
+    talk_title: Monsters in the Smart City
+    abstract: "Monsters lurk in the epistemological and political foundations of <q>smart</q> cities, computer vision systems, and artificial intelligence networks. Tortured kittens, 19th Century phrenologists, Stalinist theories of aesthetics, and actual vampires are but some of the bad inhabitants of the built environments and infrastructures we find ourselves increasingly enmeshed within. In this talk, artist/geographer Trevor Paglen shows how struggles over rights in an automated landscape entail new and urgent struggles over meaning itself."
+    bio: "Trevor Paglen is an artist whose work spans image-making, sculpture, investigative journalism, writing, engineering, and numerous other disciplines. Among his chief concerns are learning how to see the historical moment we live in and developing the means to imagine alternative futures.Trevor Paglen’s work is included in the collections of the Metropolitan Museum of Art; the San Francisco Museum of Modern Art; the Smithsonian American Art Museum; the Whitney Museum of American Art; Berkeley Art Museum; the Solomon R. Guggenheim Museum, New York; Victoria and Albert Museum, London; and the Nevada Museum of Art. He has launched an artwork into distant orbit around Earth in collaboration with Creative Time and MIT, contributed research and cinematography to the Academy Award-winning film Citizenfour, and created a radioactive public sculpture for the exclusion zone in Fukushima, Japan.
+    <br><br>
+    He is a 2017 recipient of the MacArthur Foundation Award.
+    <br><br>
+    Paglen holds a B.A. from U.C. Berkeley, an MFA from the Art Institute of Chicago, and a Ph.D. in Geography from U.C. Berkeley."
+    video_id: L4iwcgHciow
+    video_starttime: 282
+  # session speakers
+  ohalpern:
+    name: Orit Halpern
+    title:  Strategic Hire in Interactive Theory and Design, Associate Professor, Department of Sociology and Anthropology, Concordia University
+    talk_title: "Resilient Hope: Infrastructure, Responsive Environments, and <q>Smartness</q>"
+    bio: "Dr. Orit Halpern is a Strategic Hire in Interactive Theory and Design and an Associate Professor in the Department of Sociology and Anthropology at Concordia University. Her work bridges the histories of science, computing, and cybernetics with design and art practice. She is also a co-director of the Speculative Life Research Cluster, a research-creation laboratory situated at the intersection of the computational and environmental sciences, design, and anthropology (www.speculativelife.com). Her recent monograph, Beautiful Data (Duke Press, 2015), is a history of interactivity, data visualization, and ubiquitous computing. She is currently working on two books; the first is a history and theory of “smartness”, and the second is about extreme infrastructures, resilience, and speculation. She has also published and created works for a variety of venues including e-flux, Rhizome, The Journal of Visual Culture, Public Culture, and ZKM in Karlsruhe, Germany."
+    video_id: fENqL6ck6bo
+    video_starttime: 3426
+  smattern:
+    name: Shannon Mattern
+    title: Associate Professor of Media Studies, The New School
+    talk_title: "Ether and Ore: An Archaeology of Urban Intelligences"
+    bio: "Shannon Mattern is an Associate Professor of Media Studies at The New School. Her writing and teaching focus on archives, libraries, and other media spaces; media infrastructures; spatial epistemologies; and mediated sensation and exhibition. She is the author of The New Downtown Library: Designing with Communities; Deep Mapping the Media City; and Code and Clay, Data and Dirt, all published by University of Minnesota Press. She contributes a regular long-form column about urban data and mediated infrastructures to Places, a journal focusing on architecture, urbanism, and landscape, and she collaborates on public design and interactive projects and exhibitions. You can find her at wordsinspace.net."
+    video_id: fENqL6ck6bo
+    video_starttime: 1050
+  achan:
+    name: "Anita Say Chan"
+    title: "Associate Research Professor of Communications, Department of Media and Cinema Studies, University of Illinois, Urbana-Champaign"
+    talk_title: "Urban Filter: Connectivity Declarations and Decentering Data Futures from Latin American Startup Ecologies"
+    bio: "Anita Say Chan is an Associate Research Professor of Communications in the Department of Media and Cinema Studies at the University of Illinois, Urbana-Champaign. Her research and teaching interests include globalization and digital cultures, innovation networks and the “periphery”, and science and technology studies in Latin America. She received her PhD in 2008 from the MIT Doctoral Program in History; Anthropology; and Science, Technology, and Society. Her first book the competing imaginaries of global connection and information technologies in network-age Peru, Networking Peripheries: Technological Futures and the Myth of Digital Universalism was released by MIT Press in 2014. She is faculty affiliate at the School of Information Sciences and the Illinois Informatics Institute; and is a Faculty Fellow with the National Center for Supercomputing Applications and the Unit for Criticism and Interpretive Theory at the University of Illinois at Urbana-Champaign."
+    video_id: fENqL6ck6bo
+    video_starttime: 2235
+  vmcewen:
+    name: "V. Mitch McEwen"
+    title: "Assistant Professor, Princeton School of Architecture"
+    talk_title: "Modern Watercraft"
+    bio: "V. Mitch McEwen is principal of McEwen Studio and co-founder of A(n) Office, a collaborative of design studios in Detroit and New York City. McEwen’s work has been awarded grants from the Graham Foundation, Knight Foundation, and New York State Council on the Arts. A(n) Office and McEwen Studio projects have been commissioned by the US Pavilion at the Venice Architecture Biennale, the Museum of Contemporary Art Detroit, and the Istanbul Design Biennial. McEwen Studio projects in Detroit have produced a series of operations on houses previously owned by the Detroit Land Bank Authority. These include a combined residence and flower incubator for an engineer at 3M, a strategy for 100 houses selected by the City of Detroit to densify the neighborhood of Fitzgerald, and an award-winning repurposing of a balloon-frame house titled House Opera. McEwen’s work in urban design and architecture began at Bernard Tschumi Architects and the New York City Department of City Planning, as well as founding the Brooklyn-based non-profit SUPERFRONT."
+    video_id: E5YPUUoGXUI
+    video_starttime: 1424
+  doffenhuber:
+    name: "Dietmar Offenhuber"
+    title: "Assistant Professor, Art + Design and Public Policy, Northeastern University"
+    talk_title: "Platform Man and the Bricoleur - Hyperformalization vs. Improvisation in Urban Governance"
+    bio: "Dietmar Offenhuber is Assistant Professor at Northeastern University in the fields of Art + Design and Public Policy. He holds a PhD in Urban Planning from MIT, Master degrees from the MIT Media Lab and TU Vienna. His research focuses on the relationship between design, technology, and governance. Dietmar is the author of the award-winning monograph “Waste is Information” (MIT Press), works as an advisor to the United Nations and published books on the subjects of Urban Data, Accountability Technologies and Urban Informatics."
+    video_id: E5YPUUoGXUI
+    video_starttime: 162
+  rpietrusko:
+    name: "Robert Gerard Pietrusko"
+    title: "Assistant Professor of Architecture and Landscape Architecture, Harvard University Graduate School of Design"
+    talk_title: "The Urban Intermedia"
+    bio: "Robert Gerard Pietrusko is a cartographer and composer based in Somerville, Massachusetts. His work explores contemporary technologies of measurement, simulation, and visualization, and their relationship to the production of space. He is an Assistant Professor of Architecture and Landscape Architecture at Harvard University's Graduate School of Design. His work has been exhibited at the Museum of Modern Art (MoMA), SFMOMA, and ZKM, among others, and is part of the permanent collection of the Foundation Cartier in Paris."
+    video_id: 4NIe7rIepwU
+    video_starttime: 408
+  sbrowne:
+    name: "Simone Browne"
+    title: "Associate Professor, Department of African and African Diaspora Studies, University of Texas at Austin"
+    talk_title: "For Maalik, Naz, Brittany & Alexis: Or, Deliberate Acts of Disruption in City Space"
+    bio: "Simone Browne is Associate Professor in the Department of African and African Diaspora Studies at The University of Texas at Austin. Simone’s first book, Dark Matters: On the Surveillance of Blackness, was awarded the 2016 Lora Romero First Book Publication Prize by the American Studies Association, the 2016 Surveillance Studies Book Prize by the Surveillance Studies Network, and the 2015 Donald McGannon Award for Social and Ethical Relevance in Communications Technology Research. Simone is also a member of Deep Lab, a feminist collaborative composed of artists, engineers, hackers, writers, and theorists."
+    video_id: 4NIe7rIepwU
+    video_starttime: 3395
+  nmutiti:
+    name: "Nontsikelelo Mutiti"
+    title: "Assistant Professor of Graphic Design, Virginia Commonwealth University"
+    talk_title: "Making a Way Through The Digital"
+    bio: "Nontsikelelo Mutiti is a Zimbabwean born interdisciplinary artist and educator. She holds a diploma in multimedia art from the Zimbabwe Institute of Vigital Arts, and an MFA from the Yale School of Art, with a concentration in graphic design. Recently, she has been a resident artist at the Museum of Contemporary Art Detroit, Recess and the Centre for Book Arts, both in New York City.  In 2015, she was awarded the Joan Mitchell Foundation Emerging Artist Grant in its inaugural year. She has participated in several group shows including Salon Style at the Studio Museum, a special screening for Dreamlands at the Whitney Museum, Talking Pictures at the Metropolitan Museum, and THREE: On Visibility and Camouflage at We Buy Gold. Mutiti produces project based works and founded Black Chalk and Co with Tinashe Mushakavanhu, a collective of writers, artists, curators, educators that initiates research-based projects that result in publications, archival projects and events. She is currently Assistant Professor in Graphic Design at Virginia Commonwealth University."
+    video_id: 4NIe7rIepwU
+    video_starttime: 1911
+  lmeisterlin:
+    name: "Leah Meisterlin"
+    title: "Assistant Professor in Urban Planning, Columbia Graduate School of Architecture, Planning and Preservation"
+    talk_title: "Cartographies of Distance"
+    bio: "Leah Meisterlin is an urbanist, GIS methodologist, and Assistant Professor in Urban Planning at Columbia GSAPP. Broadly, her research engages concurrent issues of spatial justice, informational ethics, and the effects of infrastructural networks on the construction of social and political space. Her current work explores the ways in which digital technologies are restructuring urban spatial politics and altering methods, both contemporary and historical, of urban research.
+    <br><br>
+    Meisterlin edited Comments on Foreclosed (2013) following the exhibition Foreclosed: Rehousing the American Dream (Museum of Modern Art 2012) and coauthored The Buell Hypothesis: Rehousing the American Dream (2011). Among others, her articles and essays have appeared in the Annals of the American Association of Geographers, Planning Perspectives, The Avery Review, ARPA Journal, and Drug and Alcohol Dependence. Additionally, her work is featured in Contemporary Digital Architecture: Design and Techniques (Ed. Dimitri Kottas 2010) and The Infrastructural City: Networked Ecologies in Los Angeles (Ed. Kazys Varnelis 2008)."
+    video_id: TSDbKnmwPB0
+    video_starttime: 1279
+  mwilson:
+    name: "Matthew W. Wilson"
+    title: "Associate Professor of Geography, University of Kentucky"
+    talk_title: "Movement: Strange Concepts and the Essentially Subjective"
+    bio: "Matthew W. Wilson, PhD, is the Distinguished Larry Bell Visiting Associate Professor at The University of British Columbia. He is also Associate Professor of Geography at the University of Kentucky and Visiting Scholar at the Center for Geographic Analysis at Harvard University. He co-founded and co-directs the New Mappings Collaboratory which studies and facilitates new engagements with geographic representation. He is co-editor of Understanding Spatial Media, published by SAGE, and his most recent book is New Lines, published with the University of Minnesota Press. He has previously taught at the Harvard Graduate School of Design, and his current research examines mid-20th century, digital mapping practices. He earned his PhD and MA from the University of Washington and his BS from Northwest Missouri State University."
+    video_id: TSDbKnmwPB0
+    video_starttime: 218
+  cheller:
+    name: "Lorenzo Pezzani"
+    title: "Architect and Researcher"
+    talk_title: "Hostile Environments: Geopower and Mediation Within and Against the Violence of Borders"
+    bio: "Lorenzo Pezzani is an architect and researcher. In 2015, he completed a Ph.D. in Research Architecture at Goldsmiths, University of London, where he is currently Lecturer and leads the MA studio in Forensic Architecture. His work deals with the spatial politics and visual cultures of migration, with a particular focus on the geography of the ocean.
+    <br><br>
+    Working together with researcher and filmmaker Charles Heller since 2011, they co-founded the WatchTheMed platform and have been working on Forensic Oceanography, a project that critically investigates the militarized border regime and the politics of migration in the Mediterranean Sea. Their collaborative work has been used as evidence in courts of law, published across different media and academic outlets and exhibited widely."
+    video_id: u2pAR8cb5hM
+    video_starttime: 238
+  scobarrubias:
+    name: "Sebastian Cobarrubias"
+    title: "Assistant Professor in Global Studies, University of North Carolina at Charlotte"
+    talk_title: "Mapping the Spatial Logics of Remote Migration Control: Containment Practices and Othering Devices"
+    bio: "Sebastian Cobarrubias currently works as Assistant Professor in the Global Studies Department at the University of North Carolina in Charlotte where he is exploring active learning methods. His research interests include border studies, social movements and critical cartographic theory. With a PhD in Human Geography from UNC-Chapel Hill, he has published in journals such as Antipode, Political Geography, and European and Urban Regional Studies.
+    <br><br>
+    The co-author of this paper Maribel Casas-Cortes is affiliated with the Anthropology Department of the University of North Carolina in Charlotte, was recently awarded a Hunt Fellowship in order to complete her first monograph on social movements and precarity in Southern Europe. She holds a PhD in Cultural Anthropology from the University of North Carolina at Chapel Hill. Her publications include articles in journals such as Rethinking Marxism, Cultural Studies and Anthropology Quarterly.
+    <br><br>
+    Maribel + Sebastian have jointly collaborated in several research projects including those related to activist interventions: Atlas of Radical Cartography (Journal of Aesthetics and Protest 2007); Constituent Imaginations: Militant Investigations, Collective Theorization (AK Press 2007); A Handbook to Urban Anthropology (Blackwell 2014); Mapping Precariousness, Labour Insecurity and Uncertain Livelihoods: Subjectivities in Resistance (Routledge 2017). They have also developed collaborative research and co-authored publications on the controversial recent border policies carried out by the European Union in the Mediterranean and West Africa in edited volumes such as: Mapping Migration, Identity and Space (Palgrave 2017) and The Critical Handbook on Migration Geographies (Edgar Ellen forthcoming)."
+    video_id: u2pAR8cb5hM
+    video_starttime: 1843
